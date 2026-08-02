@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitNova - Diet Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🍎 Diet Tracker</h1>
+
+<div class="card">
+
+<label>Meal Type</label>
+
+<select id="mealType">
+<option>Breakfast</option>
+<option>Lunch</option>
+<option>Snacks</option>
+<option>Dinner</option>
+</select>
+
+<label>Food Name</label>
+
+<input
+type="text"
+id="foodName"
+placeholder="Enter food name">
+
+<label>Calories</label>
+
+<input
+type="number"
+id="foodCalories"
+placeholder="Enter calories">
+
+<button onclick="addMeal()">
+Add Meal
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Today's Meals</h2>
+
+<ul id="mealList"></ul>
+
+<h3>
+Total Calories :
+<span id="totalCalories">0</span> kcal
+</h3>
+
+<button onclick="clearMeals()">
+Clear All
+</button>
+
+</div>
+
+<div class="card">
+
+<button onclick="location.href='dashboard.html'">
+⬅ Dashboard
+</button>
+
+<button onclick="location.href='workout.html'">
+Next ➜ Workout
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
