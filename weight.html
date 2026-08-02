@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FitNova - Weight Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚖ Weight Tracker</h1>
+
+<div class="card">
+
+<label for="weightInput">Current Weight (kg)</label>
+
+<input
+type="number"
+id="weightInput"
+placeholder="Enter today's weight">
+
+<button onclick="addWeight()">
+Save Weight
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Weight History</h2>
+
+<ul id="weightList"></ul>
+
+<h3>
+Current Weight:
+<span id="currentWeight">0</span> kg
+</h3>
+
+<h3>
+Starting Weight:
+<span id="startWeight">0</span> kg
+</h3>
+
+<h3>
+Weight Change:
+<span id="weightChange">0</span> kg
+</h3>
+
+<button onclick="clearWeights()">
+Clear Weight
+</button>
+
+</div>
+
+<div class="card">
+
+<button onclick="location.href='dashboard.html'">
+⬅ Dashboard
+</button>
+
+<button onclick="location.href='progress.html'">
+Next ➜ Progress
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
