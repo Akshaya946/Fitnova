@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitNova Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏋️ FitNova Dashboard</h1>
+
+        <!-- Welcome Card -->
+        <div class="card">
+
+            <h2>Welcome</h2>
+
+            <p>
+                <strong>Name:</strong>
+                <span id="userName"></span>
+            </p>
+
+            <p>
+                <strong>Age:</strong>
+                <span id="ageValue"></span>
+            </p>
+
+            <p>
+                <strong>Height:</strong>
+                <span id="heightValue"></span>
+            </p>
+
+            <p>
+                <strong>Weight:</strong>
+                <span id="weightValue"></span>
+            </p>
+
+        </div>
+
+        <!-- BMI -->
+        <div class="card">
+
+            <h2>BMI Calculator</h2>
+
+            <h3 id="bmiValue">0</h3>
+
+            <p id="bmiStatus">-</p>
+
+        </div>
+
+        <!-- Water Tracker -->
+        <div class="card">
+
+            <h2>💧 Water Tracker</h2>
+
+            <h3>
+                <span id="waterCount">0</span> / 8 Glasses
+            </h3>
+
+            <progress
+                id="waterProgress"
+                value="0"
+                max="8"
+                style="width:100%; height:20px;">
+            </progress>
+
+            <br><br>
+
+            <button onclick="addWater()">
+                + Add Water
+            </button>
+
+            <button onclick="removeWater()">
+                - Remove
+            </button>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="card">
+
+            <h2>Navigation</h2>
+
+            <button onclick="location.href='diet.html'">
+                🍎 Diet Tracker
+            </button>
+
+            <button onclick="location.href='workout.html'">
+                💪 Workout Tracker
+            </button>
+
+            <button onclick="location.href='weight.html'">
+                ⚖ Weight Tracker
+            </button>
+
+            <button onclick="location.href='progress.html'">
+                📊 Progress
+            </button>
+
+            <button onclick="location.href='settings.html'">
+                ⚙ Settings
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
