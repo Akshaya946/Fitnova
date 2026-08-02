@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitNova - Workout Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💪 Workout Tracker</h1>
+
+<div class="card">
+
+<label>Workout Type</label>
+
+<select id="workoutType">
+<option>Walking</option>
+<option>Running</option>
+<option>Cycling</option>
+<option>Yoga</option>
+<option>Gym</option>
+<option>Swimming</option>
+<option>Custom</option>
+</select>
+
+<label>Custom Workout (Optional)</label>
+
+<input
+type="text"
+id="customWorkout"
+placeholder="Enter workout name">
+
+<label>Duration (Minutes)</label>
+
+<input
+type="number"
+id="duration"
+placeholder="Enter duration">
+
+<label>Calories Burned</label>
+
+<input
+type="number"
+id="burnedCalories"
+placeholder="Enter calories burned">
+
+<button onclick="addWorkout()">
+Add Workout
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Today's Workouts</h2>
+
+<ul id="workoutList"></ul>
+
+<h3>
+Total Duration :
+<span id="totalDuration">0</span> Minutes
+</h3>
+
+<h3>
+Total Calories Burned :
+<span id="totalBurned">0</span> kcal
+</h3>
+
+<button onclick="clearWorkouts()">
+Clear All
+</button>
+
+</div>
+
+<div class="card">
+
+<button onclick="location.href='dashboard.html'">
+⬅ Dashboard
+</button>
+
+<button onclick="location.href='weight.html'">
+Next ➜ Weight Tracker
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
